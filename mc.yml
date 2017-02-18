@@ -1,4 +1,4 @@
 - hosts: test-servers
   tasks:
     - name: Installs mc
-      apt: pkg=mc state=installed update_cache=true
+      yum: name=mc state=present
